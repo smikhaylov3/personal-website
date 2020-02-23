@@ -1,0 +1,54 @@
+@import 'defaults';
+@import "bourbon";
+
+
+.flex-grid {
+  display: flex;
+}
+
+// @media #{$phone-small} { 
+// @media #{$desktop} { 
+// 	.flex-grid-halves {
+// 		background-color: red;
+// 		display: block;
+// 		.col {
+// 			width: 100%;
+// 			margin: 0 0 10px 0;
+// 		}
+// 	}
+// }
+
+.red {
+	background-color: red;
+}
+
+.flex-grid-halves {
+	
+	display: flex;
+	justify-content: space-between;
+	// color: blue;
+	@media #{$phone-small} {	
+		// background-color: red;
+		display: block;
+		width: 100%;
+		.col {
+			width: 100%;
+			margin: 0 0 10px 0;
+		}
+	}
+
+	@media #{$desktop-small} {	
+		background-color: green;
+		display: block;
+		width: 100%;
+		.col {
+			width: 100%;
+			margin: 0 0 10px 0;
+		}
+	}
+}
+
+
+.flex-grid-halves .col {
+  width: 100%;
+}

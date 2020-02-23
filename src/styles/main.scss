@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+
+
+/* CUSTOM SASS STARTS BELOW */
+@import 'defaults';
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: $main-bg-color;    
+  color: $accent-black;
+  font-family: 'Roboto Slab', 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 3em;
+  @media #{$desktop} { 
+    font-size: 10px;
+  }
+  @media #{$desktop-big} { 
+    font-size: 12px;
+  }
+  animation: background-cycle 60s linear infinite;
+}
+
+@keyframes background-cycle {
+  0% { background: $main-bg-color; }
+  25% { background: #0099FF; }
+  50% { background: #2E2E38; }
+  75% { background: #0099FF; }
+  100% { background: $main-bg-color; }
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 200%;
+}
+
+.github-info {
+  margin: 5vh;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+footer {
+  text-align: center;
+  padding-top: 5vh;
+
+  a {
+    text-decoration: none;
+    color: $accent-blue;
+
+    &:hover {
+      color: $accent-red;
+    }
+  }
+
+  #heart{
+    color: $accent-red;
+  }
+}
+
+.header {
+  background-color: $header-background-color;
+  /* remove the gradient */
+  background-image: none !important;
+  box-shadow: 0 8px 6px -6px rgba(0,0,0, .2);
+  padding-top: 10px;
+}
+
+.header a {
+  color: $header-text-color;
+  font-family: Roboto Slab, sans-serif;
+  font-size: 1.1em;
+  margin-top: -5px;
+}
+
+ul.nav{
+  display:inline-flex;
+}
+
+.nav-link{
+  border-top: 4px solid transparent;
+  transition: border-top .3s;
+  &:hover{border-top: 4px solid dodgerblue;}
+}
+
+.hide-when-small {
+  @media #{$desktop} {
+    display: none;
+  }
+}
+
+.icon {
+  font-size: 1.4em;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.footer_icon {
+  height: 18px;
+  width: auto;
+  @media #{$desktop} {
+    height: 5rem;
+  }
+}
+
+.statistics {
+  background-color: $statistics-background-color;
+  color: $statistics-color;
+  width: 80vw;
+  padding: 1vh 1vw 1vh 1vw; 
+  margin-bottom: 2em;
+}
+
+.navbar-brand {
+  line-height: normal;
+  @media #{$desktop} {
+    font-size: 3rem;
+  } 
+}

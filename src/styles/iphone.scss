@@ -1,0 +1,107 @@
+@import 'defaults';
+
+.iphone {
+  background: $color-snow;
+  border-radius: 24px;
+  margin: 0 auto;
+  height: 1150px;
+  width: 600px;
+  @media #{$desktop} { 
+    position: absolute;
+    left: 40vw;
+    margin-top: -70px;
+    width: 150px;
+    height: 200px;
+  }
+}
+
+.iphone-inner {
+  @media #{$desktop} { 
+    width: 165px;
+    height: 320px;
+  }
+  height: 1150px;
+  width: 600px; 
+  background: $color-snow;
+  border: solid 2px $color-silver-dark;
+  border-radius: 24px;
+  position: absolute;
+  box-shadow: 1px 2px 5px 2px rgba(50, 50, 50, 0.75);
+    .circ-button {
+      background: $color-snow;
+      border: solid 2px #3b3b3b;
+      width: 50px;
+      height: 50px;
+      position: relative;
+      margin: 90px auto;
+      border-radius: 50%;
+      cursor: pointer;
+      @media #{$desktop} { 
+        width: 25px;
+        height: 25px;
+        top: -55px;
+      }
+    }
+
+  .camera {
+    @include linear-gradient(#1f1f1f, #141414);
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: solid 1px $color-silver;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30px;
+    left: -30px;
+    @media #{$desktop} { 
+      top: 17px;
+    }
+  }
+
+  .oval {
+    @include linear-gradient(#1f1f1f, #141414);
+    width: 32px;
+    height: 3px;
+    top: 23px;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-bottom: -9.6px;
+    position: relative;
+    @media #{$desktop} { 
+      top: 10px;
+    }
+  }
+}
+.small-top-circle {
+  @include linear-gradient(#1f1f1f, #141414);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  top: 6px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.screen {
+  position: relative;
+  width: 570px;
+  height: 960px;
+  margin: 0 auto;
+  top: 70px;
+  overflow: hidden;
+  @include linear-gradient(#1f1f1f, #141414);
+  border: solid 2px #3b3b3b;@include transition(all .4s $ease-in-circ);
+  @media #{$desktop} { 
+    top: 28px;
+    width: 150px;
+    height: 248px;
+  }
+}
+
+.screen img {
+  width: 570px;
+  @media #{$desktop} { 
+    width: 146px;
+  }
+}

@@ -1,0 +1,200 @@
+@import 'defaults';
+@import "bourbon";
+// This will place the element over the parallax elements
+// transform: translateZ(0);
+
+.upper-container {
+  transform: translateZ(0);
+  padding-top: 15em;
+  padding-bottom: 5em;
+  // width: 100vw;
+  background-color: grey !important;
+
+}
+
+// Todo move to other scss file
+.footer-container {
+  background-color: black;
+  transform: translateZ(0);
+}
+
+.align-text-left {
+  // text-align: left;
+
+}
+
+
+
+.inner-container {
+  // flex: 1 1 auto;     /* 1 */
+  // position: relative;
+  min-width: 1px;
+  max-width: 400px;
+  margin: 0 auto;
+  z-index: 1;
+  width: 80%;
+  // align-items: center;
+  max-width: 80%;
+  // max-width: 80vh;
+  // padding-left: 8%;
+  // padding-right: 8%;
+  // max-width: 1%;
+  
+  // color: #333447;
+
+  color: white;
+  letter-spacing: 1px;
+  line-height: 1.75em;
+
+
+  // @media #{$desktop-big} { 
+  //   background-color: blue;
+  // }
+  
+  
+}
+
+.flex-container {
+  flex: display;
+}
+
+.list-header {
+  font-size: 2.2em;
+  font-family: "MontserratAlternates-Bold", sans;
+  font-weight: 700;
+  padding-bottom: 2.5em;
+  color: #fc7982;
+
+}
+
+.project-entry {
+  font-family: "MontserratAlternates-ExtraLight", sans;
+  font-size: 3em;
+  font-weight: 200;
+  padding-top: 0.35em;
+  margin-bottom: 0.75em;
+  // @media #{$phone-small} { 
+    
+  //   color: coral;
+  // }
+}
+
+
+hr.fancy-line {
+  font-weight: 600;
+  font-size: 2px;
+  color: coral;
+  max-width: 100%;
+  border: none;
+  height: 2px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+  
+}
+
+.project-date {
+  font-family: "MontserratAlternates-ExtraLight", sans;
+  font-size: 0.35em;
+  padding-top: 1.8em;
+  padding-bottom: .1em;
+  font-weight: 300;
+  opacity: 0;
+  @media #{$phone-small} { 
+      opacity: 100;
+    } 
+}
+
+.project-entry:hover > * {
+  color: #fc7982;
+  // @media #{$phone-small} { 
+  //   color: blue;
+  // }
+}
+
+.project-entry:hover > * .project-date {
+  // color: blue;
+  opacity: 1.0;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+}
+
+.project-entry:hover > * hr.fancy-line {
+  //background-color: #333447;
+  background-color: #fc7982;
+}
+
+.links-no-decorate {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.links-no-decorate:hover {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+
+.word-wrap {
+  overflow-wrap: break-word
+}
+
+.one-line-space {
+  padding-top: 1em;
+}
+
+
+
+.project-entry:hover ~ .project-date {
+  //background-color: #333447;
+  color: coral;
+}
+
+.separate-bottom {
+  @media #{$desktop-small},
+    #{$phone-small} { 
+      
+      margin-bottom: 2em;
+    }
+}
+
+.increase-font {
+  @media #{$desktop-med} { 
+    font-size: 1.2rem;
+    
+  }
+  
+}
+
+
+// Base styling of the button
+.button {
+    background-color: #4ecdc4;
+    border-color: #45b7af;
+    border-radius: 5px;
+    
+    
+    text-align: center;
+    padding: 10px;
+    max-width: 10em;
+    margin-top: 15px;
+    @media #{$desktop-small},
+    #{$phone-small} { 
+      
+      max-width: 20em;
+      margin: 0 auto;
+    }
+}
+
+// Style anchor tags inside the button 
+.button a {
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+

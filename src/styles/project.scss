@@ -1,0 +1,129 @@
+@import 'defaults';
+
+.projects-container {
+  text-align: left;
+  color: #ffffff;
+  color: #fcfcfc;
+}
+
+
+.project-container {
+  background-color: #25adff;
+  height: auto;
+  padding: 100px 25px 100px 25px;
+  margin-bottom: 4vh;
+  font-size: 200%;
+  @media #{$desktop} { 
+    display: flex;
+    align-items: center;
+    font-size: 150%;
+    line-height: 1.5;
+  }
+}
+
+.project-body {
+  @media #{$desktop} { 
+    width: 40vw;
+  }
+}
+
+.project-intro {
+  flex: 0 2 auto;
+  text-align: center;
+  margin-bottom: 4vh;
+  h2 {
+    margin-bottom: 5vh;
+    // font-family: 'Raleway', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'WorkSans-ExtraLight', 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  @media #{$desktop} { 
+    text-align: left;
+  }
+}
+
+.project-links {
+  margin: 2vh 0 2vh 0;
+  flex-direction: column;
+  text-align: center;
+  i {
+    margin: 0 5px 0 5px;
+  }
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+  a:hover {
+    color: blue;
+  }
+  @media #{$desktop} { 
+    display: inline-block;
+    text-align: left;
+  }
+}
+
+.project-details {
+  margin-bottom: 2vh;
+}
+
+.desktop-screenshot-container {
+  display: none;
+  margin: 0 auto;
+  max-width: 90vw;
+  @media #{$desktop} { 
+    display: initial;
+    margin: 0 30px;
+    width: 50vw;
+  }
+}
+
+.no-mobile {
+  display: block;
+  @media #{$desktop} { 
+    display: none;
+  }
+}
+
+.desktop-screenshot-container img {
+  width: 90vw;
+  display: block;
+  margin: 0 auto;
+  @media #{$desktop} { 
+    width: 50vw;
+  }
+}
+
+
+.gfyVid {
+  width: 50vw;
+  max-height: 75vw;
+  display: block;
+  margin: 0auto;
+}
+
+.tech-icon-container {
+  margin: 1em 0 0 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  @media #{$desktop} { 
+    justify-content: flex-start;
+  }
+}
+
+.tech-icon-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background: white;
+  color: black;
+  border-radius: 2px;
+  margin: 0.2em 0.2em 0 0;
+  padding: 2px 5px;
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.tech-icon {
+  margin: auto auto auto 5px;
+  height: 1.5em;
+}
