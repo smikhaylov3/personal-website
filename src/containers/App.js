@@ -12,9 +12,10 @@ import ProjectListContainer from './ProjectListContainer';
 import SocialLinkContainer from './SocialLinkContainer';
 import { startTime } from '../index';
 import '../styles/parallax.scss';
-// import '../styles/main.scss';
+import '../styles/main.scss';
 import '../styles/introduction.scss';
 import '../styles/responsiveCol.scss';
+import '../styles/project.scss'
 import ListHeader from '../components/projectListComponents/ListHeader';
 import Particles from 'react-particles-js';
 
@@ -133,6 +134,10 @@ export class App extends Component {
               </div>
             </div>
 
+            <div className=".no-mobile">
+              <ProjectsContainer />
+            </div>
+
           <div className="increase-font">
             <div className="upper-container" style={{background: "red"}}>
               <div className="inner-container align-text-left flex-container word-wrap">
@@ -146,7 +151,7 @@ export class App extends Component {
                   I'm always happy to chat!
                   </div>
                   <div className="button">
-                    <a href = "mailto:luongt@me.com?subject = Feedback&body = Message"> 
+                    <a href = "mailto:smikhaylov3@gmail.com?subject = Feedback&body = Message"> 
                       Email Me
                     </a>
                   </div>
@@ -155,9 +160,6 @@ export class App extends Component {
           </div>
 
         </div>
-
-
-
       
         <div className="main-app-container footer-container">
           <div className="parallax__shortGroup">

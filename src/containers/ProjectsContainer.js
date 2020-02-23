@@ -9,8 +9,8 @@ import Introduction from '../components/Introduction';
 import Hills from '../components/Hills';
 import Sun from '../components/Sun';
 import { startTime } from '../index';
-// import '../styles/parallax.scss';
-// import '../styles/main.scss';
+import '../styles/parallax.scss';
+import '../styles/main.scss';
 
 /**
  * It is common practice to have a 'Root' container/component require our main App (this one).

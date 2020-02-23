@@ -6,10 +6,10 @@ export default class Footer extends Component {
     return (
       <footer>
       	<div className="upper-container">
-	        <div>
+	        <div className="increase-font">
 	        	Thanks for stopping by.
 	        </div>
-	        <div>
+	        <div className="increase-font">
 	        	I'm glad you came.
 	        </div>
 	    </div>

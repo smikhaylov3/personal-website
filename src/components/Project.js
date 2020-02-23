@@ -32,10 +32,9 @@ export default class Project extends Component {
               {techStackItems}
             </ul>
           </div>
-          { project.mobile_image !== '' ? <Mobile image={project.mobile_image}/> :
           <div className="desktop-screenshot-container no-mobile">
             { <img src={project.desktop_image}/> }
-          </div> }
+          </div>
           <ul className="project-links">
             {project.project_url ?
             <a href={project.project_url} target="_blank">

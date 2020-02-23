@@ -1,6 +1,6 @@
 const personalInfoData = {
   name: 'Sergey MIkhaylov',
-  greeting: "Hiey there i'm Sergey",
+  greeting: "Hey there i'm Sergey",
   subGreeting: "I'm a Software Developer.",
   // eslint-disable-next-line max-len
   miniIntro: 'I love bringing ideas to life through programming. My favorite tools are Python, JavaScript and Java.  You can find me around the Atlanta area.',
