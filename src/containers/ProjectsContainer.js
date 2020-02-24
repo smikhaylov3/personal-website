@@ -2,15 +2,12 @@ import React, { Component, PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as BenchmarkActions from '../actions/BenchmarkActions';
-import ProjectsTitle from '../components/ProjectsTitle';
 import Project from '../components/Project';
 import Footer from '../components/Footer';
-import Introduction from '../components/Introduction';
-import Hills from '../components/Hills';
-import Sun from '../components/Sun';
 import { startTime } from '../index';
 import '../styles/parallax.scss';
 import '../styles/main.scss';
+import '../styles/project.scss'
 
 /**
  * It is common practice to have a 'Root' container/component require our main App (this one).
@@ -31,7 +28,7 @@ export class App extends Component {
     // we can use ES6's object destructuring to effectively 'unpack' our props
         // <Header personalInfo={personalInfo} />
     return (
-          <div className="projects-container parallax__layer--base">
+          <div className="project-container">
             {/* notice that we then pass those unpacked props into the Counter component */}
               {projectEntries}
             <Footer personalInfo={personalInfo} />

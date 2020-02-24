@@ -1,4 +1,5 @@
-
+import '../../styles/project.scss'
+import '../../styles/ProjectList.scss'
 import React, { Component } from 'react';
 
 export default class SocialListing extends Component {
@@ -11,7 +12,7 @@ export default class SocialListing extends Component {
             <div>
               {title}
             </div>
-            <div className="project-date">
+            <div className="project-date one-line-space">
               {description}
             </div>
             <hr className="fancy-line"></hr>

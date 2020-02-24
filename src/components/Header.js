@@ -31,11 +31,6 @@ export default class Header extends Component {
                     <i className="fa fa-linkedin-square icon"></i>
                   </a>
                 </li>
-                <li>
-                  <a href={personalInfo.angelList} className="nav-link" target="_blank">
-                    <i className="fa fa-angellist icon"></i>
-                  </a>
-                </li>
                 </ul>
             </div>
             </nav>

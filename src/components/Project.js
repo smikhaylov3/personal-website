@@ -15,7 +15,7 @@ export default class Project extends Component {
     });
 
     return (
-      <div className="project-container" style={{background: project.background_color}}>
+      <div className="project-container">
         <div className="desktop-screenshot-container">
           { project.gfycat ?
             <video className="gfyVid" autoplay="autoplay" controls loop >

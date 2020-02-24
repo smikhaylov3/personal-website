@@ -2,7 +2,6 @@ import React, { Component, PropTypes } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import '../styles/ProjectList.scss';
-import ProjectListing from '../components/projectListComponents/ProjectListing'
 import SocialListing from '../components/projectListComponents/SocialListing'
 import ListHeader from '../components/projectListComponents/ListHeader'
 
@@ -25,8 +24,8 @@ export class App extends Component {
 
     
     return (
-      <div className="upper-container" style={{background: "white"}}>
-        <div className="inner-container align-text-left">
+      <div className="upper-container-project-list">
+        <div className="inner-container align-text-right">
             <ListHeader text="Social Links" />
             {socialLinkEntries}
         </div>

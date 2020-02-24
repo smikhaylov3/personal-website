@@ -8,8 +8,30 @@
   padding-top: 15em;
   padding-bottom: 5em;
   // width: 100vw;
-  background-color: grey !important;
+  background-color: #FFFF82 !important;
 
+}
+
+.upper-container-project-list {
+  // width: 100vw;
+  background-color: #FFFF82 !important;
+
+}
+
+.upper-container-email {
+  transform: translateZ(0);
+  padding-top: 15em;
+  padding-bottom: 5em;
+  // width: 100vw;
+  background-color: #F5F7DC !important;
+
+}
+.upper-container-end {
+  transform: translateZ(0);
+  padding-top: 15em;
+  padding-bottom: 5em;
+  // width: 100vw;
+  background-color: #79FCF3 !important;
 }
 
 // Todo move to other scss file
@@ -40,9 +62,7 @@
   // padding-right: 8%;
   // max-width: 1%;
   
-  // color: #333447;
-
-  color: white;
+  color: coral;
   letter-spacing: 1px;
   line-height: 1.75em;
 
@@ -59,12 +79,20 @@
 }
 
 .list-header {
-  font-size: 2.2em;
+  font-size: 3em;
   font-family: "MontserratAlternates-Bold", sans;
   font-weight: 700;
   padding-bottom: 2.5em;
-  color: #fc7982;
+  padding-top: 5em;
 
+}
+
+.list-header-email {
+  font-size: 3em;
+  font-family: "MontserratAlternates-Bold", sans;
+  font-weight: 700;
+  padding-bottom: 2.5em;
+  padding-top: 5em;
 }
 
 .project-entry {
@@ -73,10 +101,7 @@
   font-weight: 200;
   padding-top: 0.35em;
   margin-bottom: 0.75em;
-  // @media #{$phone-small} { 
-    
-  //   color: coral;
-  // }
+  color: coral;
 }
 
 
@@ -95,7 +120,7 @@ hr.fancy-line {
 
 .project-date {
   font-family: "MontserratAlternates-ExtraLight", sans;
-  font-size: 0.35em;
+  font-size: 1em;
   padding-top: 1.8em;
   padding-bottom: .1em;
   font-weight: 300;
@@ -106,7 +131,7 @@ hr.fancy-line {
 }
 
 .project-entry:hover > * {
-  color: #fc7982;
+  color: #FC7982;
   // @media #{$phone-small} { 
   //   color: blue;
   // }
@@ -122,7 +147,7 @@ hr.fancy-line {
 
 .project-entry:hover > * hr.fancy-line {
   //background-color: #333447;
-  background-color: #fc7982;
+  background-color: #F5F7DC;
 }
 
 .links-no-decorate {
@@ -195,6 +220,3 @@ hr.fancy-line {
     text-decoration: none;
     text-transform: uppercase;
 }
-
-
-

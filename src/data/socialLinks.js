@@ -19,6 +19,11 @@ const socialLinks = {
       title: "Email",
       description: "Send me an email.",
       url: "mailto:smikhaylov3@gmail.com"
+    },  
+    {
+      title: "Website",
+      description: "My old website.",
+      url: "https://www.sergey-mikhaylov.com"
     },
 
   ]

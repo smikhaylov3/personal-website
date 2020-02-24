@@ -16,8 +16,10 @@ import '../styles/main.scss';
 import '../styles/introduction.scss';
 import '../styles/responsiveCol.scss';
 import '../styles/project.scss'
+import '../styles/parallax.scss';
 import ListHeader from '../components/projectListComponents/ListHeader';
 import Particles from 'react-particles-js';
+import ContactForm from '../components/ConnectedForm'
 
 /**
  * It is common practice to have a 'Root' container/component require our main App (this one).
@@ -34,7 +36,7 @@ export class App extends Component {
     const { projects, benchmark, personalInfo, projectLinks, socialLinks } = this.props;
 
     return (
-      <div className="main-app-container parallax">
+      <div className="main-app-container parallax no-mobil">
         <div className="parallax-group">
           <div className="parallax-layer parallax__layer--base">
             <Introduction personalInfo={personalInfo} />
@@ -42,12 +44,11 @@ export class App extends Component {
           <div className="parallax-layer parallax__layer--back-1">
             <Sun />
           </div>
-          <div className="parallax-layer parallax__layer--back-2">
+          <div className="parallax-layer parallax__layer--back-2 parallax__shortGroup">
             <Hills />
           </div>
         </div>
-
-        <div>
+      <div>
           <Particles className="particleBg"
               
               
@@ -119,11 +120,10 @@ export class App extends Component {
                 backgroundSize: "20%",
                 backgroundPosition: "50% 50%",
                 backgroundRepeat: "no-repeat"
-              }}
-            ></Particles>
+              }}></Particles>
 
 
-            <div style={{background: "red"}} >
+            <div style={{background: "#FFFF82"}} >
               <div className="flex-grid-halves">
                 <div className="col">
                   <ProjectListContainer />
@@ -134,20 +134,18 @@ export class App extends Component {
               </div>
             </div>
 
-            <div className=".no-mobile">
+            <div className="projects-container">
               <ProjectsContainer />
             </div>
-
-          <div className="increase-font">
-            <div className="upper-container" style={{background: "red"}}>
-              <div className="inner-container align-text-left flex-container word-wrap">
+          <div className="increase-font ">
+            <div className="upper-container-email">
+              <div className="inner-container align-text-left flex-container word-wrap ">
                   <ListHeader text="Say hello" />
-                  <div>
-                  Tell me about yourself, or what you do. Or ask me programming questions,
-                  questions about Atlanta or learn Russian from me.
+                  <div className="color-email-page">
+                  Tell me about yourself, or what you do. Or you can ask me programming questions,
+                  questions about Atlanta or whatever else.
                   </div>
-                  
-                  <div className="one-line-space separate-bottom">
+                  <div className="one-line-space separate-bottom color-email-page">
                   I'm always happy to chat!
                   </div>
                   <div className="button">
@@ -155,26 +153,23 @@ export class App extends Component {
                       Email Me
                     </a>
                   </div>
+                  <br></br>
+                  <ListHeader text="Set up a meeting with me: " />
+                  <div className="main-app-container">
+                    <ContactForm/>
+                  </div>
               </div>
             </div>
           </div>
-
         </div>
-      
-        <div className="main-app-container footer-container">
+        <div className="main-app-container footer-container increase-font">
           <div className="parallax__shortGroup">
             <div className="parallax-layer parallax__layer--base">
-              <div>
-                <div className="introduction">
-                  <div className="introduction__content">
-                    <h2 className="introduction__name">
-                      {'Please come back later for more content. '}
-                    </h2>
-                    <div className="introduction__tagline">
-                      {'The site will expand as my knowledge of web programming grows!'}
-                    </div>
-                  </div>
-                </div>
+              <h2 className="introduction__name">
+                {'Please come back later for more content. '}
+              </h2>
+              <div className="introduction__tagline">
+                {'The site will expand as my knowledge of web programming grows!'}
               </div>
             </div>
             <div className="parallax-layer parallax__layer--back-1">

@@ -2,13 +2,12 @@
 
 .projects-container {
   text-align: left;
-  color: #ffffff;
-  color: #fcfcfc;
+  color: #63C7B2
 }
 
 
 .project-container {
-  background-color: #25adff;
+  background-color: #B5D99C;
   height: auto;
   padding: 100px 25px 100px 25px;
   margin-bottom: 4vh;
@@ -31,6 +30,7 @@
   flex: 0 2 auto;
   text-align: center;
   margin-bottom: 4vh;
+  color: #FFFF82;
   h2 {
     margin-bottom: 5vh;
     // font-family: 'Raleway', 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -49,11 +49,11 @@
     margin: 0 5px 0 5px;
   }
   a {
-    color: white;
+    color: #FFFF82;
     text-decoration: underline;
   }
   a:hover {
-    color: blue;
+    color: coral;
   }
   @media #{$desktop} { 
     display: inline-block;
@@ -63,9 +63,11 @@
 
 .project-details {
   margin-bottom: 2vh;
+  color: #FFFF82;
 }
 
 .desktop-screenshot-container {
+  color: #E8ABDA;
   display: none;
   margin: 0 auto;
   max-width: 90vw;

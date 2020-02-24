@@ -26,7 +26,7 @@ export class App extends Component {
 
     
     return (
-      <div className="upper-container" style={{background: "white"}}>
+      <div className="upper-container-project-list">
         <div className="inner-container align-text-left">
             <ListHeader text="Recent Projects" />
             {projectEntries}

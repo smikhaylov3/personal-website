@@ -1,4 +1,5 @@
-
+import '../../styles/project.scss'
+import '../../styles/ProjectList.scss'
 
 import React, { Component } from 'react';
 
@@ -10,6 +11,9 @@ export default class ProjectListing extends Component {
         <div>
           <div>
             {title}
+          </div>
+          <div className="inner-container">
+            {description}
           </div>
           <div className="project-date">
             {date}

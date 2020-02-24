@@ -52,3 +52,12 @@
 .flex-grid-halves .col {
   width: 100%;
 }
+.flex-grid-desktop  {	
+	background-color: green;
+	display: block;
+	width: 100%;
+	.col {
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+}
